@@ -1,0 +1,194 @@
+/* CSS BY Alexcia Edwards */
+
+/* IMPORTED FONTS: */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --primary-color: #0044cc;
+    --text-color: #222;
+    --light-gray: #444;
+    --background-color: #ffffff;
+    --font-primary: 'Arimo', sans-serif;
+    --font-heading: 'Ubuntu', sans-serif;
+}
+/* GLOBAL STYLES (mobile first/small) */
+/* ----------------------------------------------------- */
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+h3, h4 {
+    color: var(--light-gray);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #fff;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    text-align: left;
+    margin-top: 2rem;
+    border-top: 2px solid var(--primary-color);
+    padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    body {
+        padding: 2rem 4rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    table {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
+
+
+#services {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#services section {
+    margin-bottom: 2rem;
+}
+
+#services article {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#services h3,
+#services h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#services p {
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-weight: lighter;
+    color: #444444;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 20px;
+}
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
