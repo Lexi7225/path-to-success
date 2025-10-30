@@ -31,7 +31,7 @@ html body {
     padding: 1rem;
 }
 
-/* Typography */
+
 body h1, body h2, body h3, body h4 {
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
@@ -62,7 +62,7 @@ body nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Navigation */
+
 body nav ul {
     list-style: none;
     padding-left: 0;
@@ -105,7 +105,7 @@ body main section#pricing article table tr > td:first-child {
     text-align: left;
 }
 
-/* Footer */
+
 body footer {
     text-align: left;
     margin-top: 2rem;
@@ -113,7 +113,7 @@ body footer {
     padding-top: 1rem;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
     html body {
         padding: 2rem 4rem;
@@ -134,7 +134,7 @@ body footer {
     }
 }
 
-/* Services Section */
+
 body main section#services {
     margin-top: 2rem;
     margin-bottom: 3rem;
@@ -161,7 +161,7 @@ body main section#services article p {
     font-weight: lighter;
 }
 
-/* Headings */
+
 body main section#services article h3 {
     font-weight: lighter;
     color: #444444;
@@ -172,14 +172,14 @@ body main section#services article h2 {
     font-size: 20px;
 }
 
-/* Classes */
+
 body main section#services article .ubuntu-bold {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-/* Tables (complex selectors) */
+
 body main section#services article table {
     width: 100%;
     border-collapse: collapse;
@@ -198,7 +198,7 @@ body main section#services article table th {
     font-weight: bold;
 }
 
-/* Add pseudo-classes for rows */
+
 body main section#services article table tr:nth-child(even) {
     background-color: #fafafa;
 }
