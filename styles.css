@@ -1,10 +1,12 @@
 /* CSS BY Alexcia Edwards */
 
-/* IMPORTED FONTS: */
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 /* CSS RESET */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,9 +21,9 @@
     --font-primary: 'Arimo', sans-serif;
     --font-heading: 'Ubuntu', sans-serif;
 }
-/* GLOBAL STYLES (mobile first/small) */
-/* ----------------------------------------------------- */
-body {
+
+/* GLOBAL STYLES (mobile first) */
+html body {
     font-family: var(--font-primary);
     color: var(--text-color);
     background-color: var(--background-color);
@@ -30,55 +32,56 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+body h1, body h2, body h3, body h4 {
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
 
-h1 {
+body h1 {
     font-size: 2rem;
     color: var(--primary-color);
 }
 
-h2 {
+body h2 {
     font-size: 1.5rem;
     color: var(--text-color);
 }
 
-h3, h4 {
+body h3, body h4 {
     color: var(--light-gray);
 }
 
 /* Links */
-a {
+body a {
     color: var(--primary-color);
     text-decoration: none;
 }
 
-a:hover {
+body a:hover,
+body nav ul li a:hover {
     text-decoration: underline;
 }
 
 /* Navigation */
-nav ul {
+body nav ul {
     list-style: none;
     padding-left: 0;
     margin: 1rem 0;
     text-align: left;
 }
 
-nav ul li {
+body nav ul li {
     margin-bottom: 0.5rem;
     text-align: left;
 }
 
-nav ul li a {
+body nav ul li a {
     font-weight: bold;
     text-align: left;
 }
 
 /* Tables */
-table {
+body main section#pricing article table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
@@ -86,23 +89,24 @@ table {
     table-layout: fixed;
 }
 
-th, td {
+body main section#pricing article table th,
+body main section#pricing article table td {
     border: 2px solid #000;
     padding: 12px;
     text-align: left;
 }
 
-th {
+body main section#pricing article table th {
     background-color: #f2f2f2;
     font-weight: bold;
 }
 
-td:first-child {
+body main section#pricing article table tr > td:first-child {
     text-align: left;
 }
 
 /* Footer */
-footer {
+body footer {
     text-align: left;
     margin-top: 2rem;
     border-top: 2px solid var(--primary-color);
@@ -111,84 +115,94 @@ footer {
 
 /* Responsive Design */
 @media (min-width: 768px) {
-    body {
+    html body {
         padding: 2rem 4rem;
     }
 
-    nav ul {
+    html body nav ul {
         display: flex;
         justify-content: space-around;
     }
 
-    nav ul li {
+    html body nav ul li {
         margin: 0;
     }
 
-    table {
+    html body main section#pricing article table {
         width: 80%;
         margin: 2rem auto;
     }
 }
 
-
-#services {
+/* Services Section */
+body main section#services {
     margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
-#services section {
+body main section#services > section {
     margin-bottom: 2rem;
 }
 
-#services article {
+body main section#services article {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #ddd;
 }
 
-#services h3,
-#services h4 {
+body main section#services article h3,
+body main section#services article h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
-#services p {
+body main section#services article p {
     margin-bottom: 0.75rem;
-}
-
-p {
     font-size: 20px;
     font-weight: lighter;
 }
 
-h3 {
+/* Headings */
+body main section#services article h3 {
     font-weight: lighter;
     color: #444444;
     font-size: 25px;
 }
 
-h2 {
+body main section#services article h2 {
     font-size: 20px;
 }
-.ubuntu-bold {
+
+/* Classes */
+body main section#services article .ubuntu-bold {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-table {
+/* Tables (complex selectors) */
+body main section#services article table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 2rem;
 }
 
-th, td {
+body main section#services article table th,
+body main section#services article table td {
     text-align: left;
     padding: 0.75rem 1rem;
     border: 1px solid #ccc;
 }
 
-th {
+body main section#services article table th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
 
+/* Add pseudo-classes for rows */
+body main section#services article table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+body main section#services article table tr:hover {
+    background-color: #f0f8ff;
+}
